@@ -1,0 +1,1 @@
+# Nextjs-Class-projects
