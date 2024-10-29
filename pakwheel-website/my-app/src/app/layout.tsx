@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Link from "next/link";
-import { FaTwitter, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
@@ -34,8 +32,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
- 
-
         {children}
         <Footer />
       </body>

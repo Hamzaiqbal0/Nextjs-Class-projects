@@ -22,7 +22,7 @@ export function Navbar (){
 
         {/* Links (for larger screens) */}
         <div className="hidden md:flex space-x-6">
-        <Link href="/home" className="text-white py-2 hover:underline">Home</Link>
+        <Link href="/" className="text-white py-2 hover:underline">Home</Link>
           <Link href="/auto-stores" className="text-white py-2 hover:underline">Auto Store</Link>
           <Link href="/new-cars" className="text-white py-2 hover:underline">New Cars</Link>
           <Link href="/used-cars" className="text-white py-2 hover:underline">Used Cars</Link>
