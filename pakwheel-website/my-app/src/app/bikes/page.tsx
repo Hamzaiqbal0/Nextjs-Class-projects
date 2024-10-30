@@ -1,4 +1,6 @@
+
 import React from "react";
+import Image from "next/image";
 
 const Bikes: React.FC = () => {
   return (
@@ -8,9 +10,11 @@ const Bikes: React.FC = () => {
         Browse through a diverse range of motorbikes. From sports bikes to daily commuters, PakWheels has something for everyone.
       </p>
 
-      <img
+      <Image
         src="https://i.pinimg.com/originals/63/57/de/6357de9a9d2293fe75b9df315453ef15.jpg"
         alt="Popular Bikes"
+        width={500}  // Set appropriate width
+        height={300} // Set appropriate height
         className="w-full mb-6 rounded-lg shadow-md"
       />
 
@@ -19,7 +23,9 @@ const Bikes: React.FC = () => {
         Check out the top-selling bikes with detailed reviews, specs, and prices.
       </p>
 
-      <a href="https://www.pakwheels.com/bikes/" className="text-blue-600 hover:underline font-semibold">Browse More Bikes</a>
+      <a href="https://www.pakwheels.com/bikes/" className="text-blue-600 hover:underline font-semibold">
+        Browse More Bikes
+      </a>
     </div>
   );
 };

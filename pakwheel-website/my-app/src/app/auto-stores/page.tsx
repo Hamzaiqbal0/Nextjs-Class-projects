@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AutoStore: React.FC = () => {
   return (
@@ -9,13 +10,17 @@ const AutoStore: React.FC = () => {
         quality.
       </p>
 
-      <img
+      <Image
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1IEilGjW23K8MXet2HwcCrZx_Mw9Ljf62BQ&s"
         alt="Auto Store"
+        width={500}
+        height={300}
         className="w-half mb-6 rounded-lg shadow-md"
       />
 
-      <a href="https://www.pakwheels.com/accessories-spare-parts/search/-/buynow_1/" className="text-blue-600 font-semibold hover:underline">Visit Auto Store</a>
+      <a href="https://www.pakwheels.com/accessories-spare-parts/search/-/buynow_1/" className="text-blue-600 font-semibold hover:underline">
+        Visit Auto Store
+      </a>
     </div>
   );
 };

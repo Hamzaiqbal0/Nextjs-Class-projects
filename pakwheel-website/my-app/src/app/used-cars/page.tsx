@@ -1,6 +1,7 @@
 // src/app/pages/used-cars.tsx
 
 import React from "react";
+import Image from "next/image";
 
 const UsedCars: React.FC = () => {
   return (
@@ -11,9 +12,11 @@ const UsedCars: React.FC = () => {
         inspection reports, history checks, and competitive prices.
       </p>
 
-      <img
+      <Image
         src="https://timelinecovers.pro/facebook-cover/download/nissan-gtr-generations-facebook-cover.jpg"
         alt="Used Cars"
+        width={1200}  // Set appropriate width for the image
+        height={600}  // Set appropriate height for the image
         className="w-full mb-6 rounded-lg shadow-md"
       />
 

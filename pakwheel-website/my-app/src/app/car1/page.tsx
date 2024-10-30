@@ -1,60 +1,37 @@
-// src/app/pages/car-details.tsx
-"use client"
 import React from "react";
 import Link from "next/link";
-import { useSearchParams} from "next/navigation";
+import Image from "next/image";
 
 const CarDetails = () => {
-  const searchParams = useSearchParams();
-  const selectedColor = searchParams.get("color") === "White" ? "White" : "Black";
-
-  // Car images based on color selection
-  const carImages: { [key: string]: string[] } = {
-    Black: [
-      "https://www.atocars.com/storage/uploads/204825/2024-toyota-corolla-2-0-xli-g-cvt-black-mica-inside-fromage-fabric-1712305487.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlNg9JilX0AN6548oFvXdNY33FbRPaVN85sg&s",
-    ],
-    White: [
-      "https://example.com/car-white-front.jpg",
-      "https://example.com/car-white-side.jpg",
-    ],
-  };
+  // Car image for Black color
+  const carImages = [
+    "https://www.atocars.com/storage/uploads/204825/2024-toyota-corolla-2-0-xli-g-cvt-black-mica-inside-fromage-fabric-1712305487.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlNg9JilX0AN6548oFvXdNY33FbRPaVN85sg&s",
+  ];
 
   // Car description
   const carDescription = `
-    The 2024 Toyota Corolla is designed for both rugged terrains and city driving.
+    The 2024 Toyota Corolla in Black is designed for both rugged terrains and city driving.
     It offers a powerful engine, advanced safety features, and a spacious interior.
-    Choose between Black and White to suit your style.
   `;
 
   return (
     <div className="p-8 bg-gray-100 min-h-screen flex flex-col items-center">
-      <h1 className="text-3xl font-bold text-gray-800 mb-2">Toyota Corolla 2024</h1>
+      <h1 className="text-3xl font-bold text-gray-800 mb-2">Toyota Corolla 2024 (Black)</h1>
       <div className="text-2xl font-semibold text-green-600 mb-4">PKR 50.0-59.9 lacs</div>
 
-      {/* Color Selection */}
+      {/* Car Images in Flex Format */}
       <div className="flex space-x-4 mb-6">
-        <Link href={{ pathname: "/car-details", query: { color: "Black" } }}>
-          <button className={`py-2 px-4 rounded ${selectedColor === "Black" ? "bg-black text-white" : "bg-gray-200"}`}>
-            Black
-          </button>
-        </Link>
-        <Link href={{ pathname: "/car-details", query: { color: "White" } }}>
-          <button className={`py-2 px-4 rounded ${selectedColor === "White" ? "bg-gray-300 text-black" : "bg-gray-200"}`}>
-            White
-          </button>
-        </Link>
-      </div>
-
-      {/* Car Images */}
-      <div className="grid grid-cols-2 gap-4 mb-6">
-        {carImages[selectedColor].map((imageUrl, index) => (
-          <img
-            key={index}
-            src={imageUrl}
-            alt={`Toyota Corolla - ${selectedColor}`}
-            className="w-full h-48 object-cover rounded-lg shadow-md"
-          />
+        {carImages.map((imageUrl, index) => (
+          <div key={index} className="flex-1">
+            <Image
+              src={imageUrl}
+              alt="Toyota Corolla - Black"
+              width={500}  // Set appropriate width
+              height={300} // Set appropriate height
+              className="w-full h-48 object-cover rounded-lg shadow-md"
+            />
+          </div>
         ))}
       </div>
 
