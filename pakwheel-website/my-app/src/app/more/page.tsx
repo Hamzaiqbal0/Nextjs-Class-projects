@@ -6,8 +6,8 @@ const More: React.FC = () => {
     <div className="p-8 bg-gray-100 min-h-screen">
       <h1 className="text-3xl font-bold text-gray-800 mb-4">Welcome to PakWheels: Your Ultimate Car Marketplace</h1>
       <p className="text-gray-700 mb-6">
-        At PakWheels, we offer a comprehensive platform for all car enthusiasts, whether you"re looking to buy or sell a vehicle, 
-        stay updated with the latest automotive news, or simply explore more about cars and bikes in Pakistan. Here"s an overview of 
+        At PakWheels, we offer a comprehensive platform for all car enthusiasts, whether you are looking to buy or sell a vehicle, 
+        stay updated with the latest automotive news, or simply explore more about cars and bikes in Pakistan. Here is an overview of 
         what you can expect to find on our website.
       </p>
 
@@ -19,7 +19,7 @@ const More: React.FC = () => {
           <h2 className="text-2xl font-semibold text-blue-600">Used Cars</h2>
           <p className="text-gray-700 mb-4">
             Our platform connects buyers and sellers for a wide range of used cars. With verified listings, transparent prices, and 
-            detailed descriptions, finding a quality used car has never been easier. Whether you’re looking for an economical city 
+            detailed descriptions, finding a quality used car has never been easier. Whether you are looking for an economical city 
             car or a rugged SUV, our listings cater to every need.
           </p>
           <Link href="/used-cars">
@@ -85,3 +85,9 @@ const More: React.FC = () => {
 };
 
 export default More;
+//
+
+
+
+
+//

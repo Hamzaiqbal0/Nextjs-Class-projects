@@ -13,7 +13,7 @@ const Bikes: React.FC = () => {
       <Image
         src="https://i.pinimg.com/originals/63/57/de/6357de9a9d2293fe75b9df315453ef15.jpg"
         alt="Popular Bikes"
-        width={500}  // Set appropriate width
+        width={1000}  // Set appropriate width
         height={300} // Set appropriate height
         className="w-full mb-6 rounded-lg shadow-md"
       />

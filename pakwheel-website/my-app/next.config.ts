@@ -15,7 +15,8 @@ const nextConfig: NextConfig = {
 "www.cartoq.com","gaadiwaadi.com",
 "cache2.pakwheels.com",
 "www.electrive.com",
-"cache1.pakwheels.com",   //new cars
+"cache1.pakwheels.com",
+"play-lh.googleusercontent.com"   //new cars
 ], // Add any other domains as needed
     },
   // Add any other config options here

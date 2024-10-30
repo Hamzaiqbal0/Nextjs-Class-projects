@@ -13,7 +13,7 @@ const AutoStore: React.FC = () => {
       <Image
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1IEilGjW23K8MXet2HwcCrZx_Mw9Ljf62BQ&s"
         alt="Auto Store"
-        width={500}
+        width={300}
         height={300}
         className="w-half mb-6 rounded-lg shadow-md"
       />
