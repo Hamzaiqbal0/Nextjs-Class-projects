@@ -1,6 +1,6 @@
 // src/app/pages/used-cars.tsx
 
-import React from 'react';
+import React from "react";
 
 const UsedCars: React.FC = () => {
   return (

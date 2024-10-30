@@ -1,13 +1,13 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const More: React.FC = () => {
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
       <h1 className="text-3xl font-bold text-gray-800 mb-4">Welcome to PakWheels: Your Ultimate Car Marketplace</h1>
       <p className="text-gray-700 mb-6">
-        At PakWheels, we offer a comprehensive platform for all car enthusiasts, whether you're looking to buy or sell a vehicle, 
-        stay updated with the latest automotive news, or simply explore more about cars and bikes in Pakistan. Here's an overview of 
+        At PakWheels, we offer a comprehensive platform for all car enthusiasts, whether you"re looking to buy or sell a vehicle, 
+        stay updated with the latest automotive news, or simply explore more about cars and bikes in Pakistan. Here"s an overview of 
         what you can expect to find on our website.
       </p>
 

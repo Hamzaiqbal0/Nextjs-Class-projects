@@ -1,22 +1,22 @@
 // src/app/pages/car-details.tsx
 "use client"
-import React from 'react';
-import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
+import React from "react";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 const CarDetails = () => {
   const searchParams = useSearchParams();
-  const selectedColor = searchParams.get('color') === 'White' ? 'White' : 'Black';
+  const selectedColor = searchParams.get("color") === "White" ? "White" : "Black";
 
   // Car images based on color selection
   const carImages: { [key: string]: string[] } = {
     Black: [
-      'https://content.homenetiol.com/2000292/2235906/0x0/66d86e57e7d140d8a949b698ae7937b2.jpg',
-      'https://cdcssl.ibsrv.net/autodata/images/?img=USD20HOC021A021002.jpg&width=660',
+      "https://content.homenetiol.com/2000292/2235906/0x0/66d86e57e7d140d8a949b698ae7937b2.jpg",
+      "https://cdcssl.ibsrv.net/autodata/images/?img=USD20HOC021A021002.jpg&width=660",
     ],
     White: [
-      'https://example.com/car-white-front.jpg',
-      'https://example.com/car-white-side.jpg',
+      "https://example.com/car-white-front.jpg",
+      "https://example.com/car-white-side.jpg",
     ],
   };
 
@@ -34,13 +34,13 @@ const CarDetails = () => {
 
       {/* Color Selection */}
       <div className="flex space-x-4 mb-6">
-        <Link href={{ pathname: '/car-details', query: { color: 'Black' } }}>
-          <button className={`py-2 px-4 rounded ${selectedColor === 'Black' ? 'bg-black text-white' : 'bg-gray-200'}`}>
+        <Link href={{ pathname: "/car-details", query: { color: "Black" } }}>
+          <button className={`py-2 px-4 rounded ${selectedColor === "Black" ? "bg-black text-white" : "bg-gray-200"}`}>
             Black
           </button>
         </Link>
-        <Link href={{ pathname: '/car-details', query: { color: 'White' } }}>
-          <button className={`py-2 px-4 rounded ${selectedColor === 'White' ? 'bg-gray-300 text-black' : 'bg-gray-200'}`}>
+        <Link href={{ pathname: "/car-details", query: { color: "White" } }}>
+          <button className={`py-2 px-4 rounded ${selectedColor === "White" ? "bg-gray-300 text-black" : "bg-gray-200"}`}>
             White
           </button>
         </Link>

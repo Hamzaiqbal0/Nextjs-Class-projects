@@ -1,6 +1,6 @@
 // src/app/pages/post-ad.tsx
 
-import React from 'react';
+import React from "react";
 
 const PostAd = () => {
   return (

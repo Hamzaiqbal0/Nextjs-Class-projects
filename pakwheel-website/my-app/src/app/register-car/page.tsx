@@ -1,6 +1,6 @@
 // src/app/pages/register-car.tsx
 
-import React from 'react';
+import React from "react";
 
 const RegisterCar = () => {
   return (

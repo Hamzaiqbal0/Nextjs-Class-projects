@@ -2,7 +2,7 @@
 
 "use client"; // Enables interactivity
 
-import React from 'react';
+import React from "react";
 
 const MakePayment = () => {
   return (

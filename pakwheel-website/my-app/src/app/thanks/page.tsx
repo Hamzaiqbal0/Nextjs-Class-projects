@@ -2,7 +2,7 @@
 
 "use client"; // To allow interactivity
 
-import React from 'react';
+import React from "react";
 
 const ThankYou = () => {
   return (
