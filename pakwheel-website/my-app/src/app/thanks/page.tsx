@@ -3,6 +3,7 @@
 "use client"; // To allow interactivity
 
 import React from "react";
+import Link from "next/link";
 
 const ThankYou = () => {
   return (
@@ -15,18 +16,17 @@ const ThankYou = () => {
 
       {/* Taglines for a positive experience */}
       <div className="text-center text-gray-700 space-y-4 mb-8">
-        <p>🌟 "Making Your Dreams Drive is Our Passion!"</p>
-        <p>🚗 "Safe Travels Ahead with Your New Ride!"</p>
-        <p>💚 "Bringing the Joy of Driving Right to You!"</p>
-        <p>🙏 "Thank you for being a valued part of our family!"</p>
+        <p>{`🌟 "Making Your Dreams Drive is Our Passion!"`}</p>
+        <p>{`🚗 "Safe Travels Ahead with Your New Ride!"`}</p>
+        <p>{`💚 "Bringing the Joy of Driving Right to You!"`}</p>
+        <p>{`🙏 "Thank you for being a valued part of our family!"`}</p>
       </div>
 
-      <a
-        href="/"
-        className="bg-blue-500 text-white py-3 px-6 rounded-full font-bold text-lg hover:bg-blue-700 transition duration-300 ease-in-out"
-      >
-        Back to Home
-      </a>
+      <Link href="/">
+        <button className="bg-blue-500 text-white py-3 px-6 rounded-full font-bold text-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+          Back to Home
+        </button>
+      </Link>
     </div>
   );
 };
