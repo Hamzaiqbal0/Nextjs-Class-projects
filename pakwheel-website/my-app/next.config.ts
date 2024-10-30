@@ -11,8 +11,11 @@ const nextConfig: NextConfig = {
     "www.atocars.com","encrypted-tbn0.gstatic.com",    //car1
 "content.homenetiol.com","cdcssl.ibsrv.net", //car2
 "sbimotor.com","i.pinimg.com",   //car3
-"www.cartoq.com","gaadiwaadi.com"    //car4
-
+"www.ccarprice.com",  //car4
+"www.cartoq.com","gaadiwaadi.com",
+"cache2.pakwheels.com",
+"www.electrive.com",
+"cache1.pakwheels.com",   //new cars
 ], // Add any other domains as needed
     },
   // Add any other config options here
