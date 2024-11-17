@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-const UsedCars: React.FC = () => {
+const UsedCars = () => {
   return (
     <div className="container mx-auto p-8 bg-gray-100">
       <h1 className="text-4xl font-bold mb-4 text-blue-800">Used Cars for Sale</h1>

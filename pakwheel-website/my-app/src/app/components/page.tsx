@@ -4,9 +4,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+
 const Home = () => {
   return (
     <>
+
       <div className="p-2 border border-gray-300 rounded-md">
         <div className="text-center mt-10 bg-gray-50">
           <p className="text-black font-bold text-2xl">Sell Your Car on PakWheels and Get the Best Price</p>

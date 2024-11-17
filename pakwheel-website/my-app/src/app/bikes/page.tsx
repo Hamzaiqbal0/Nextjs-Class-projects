@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Bikes: React.FC = () => {
+const Bikes = () => {
   return (
     <div className="container mx-auto p-8 bg-gray-100">
       <h1 className="text-4xl font-bold mb-4 text-blue-800">Popular Bikes in Pakistan</h1>
